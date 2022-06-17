@@ -3,19 +3,28 @@ import styled from "styled-components";
 
 const BlocoCarrinho = styled.div`
   width: 20%;
-  height: 100%;
   margin: 2% 1%;
   padding: 0 10px;
   border-radius: 10px;
   background-color: #262626;
   color: white;
  // border: 1px solid red;
+ @media screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    display: flex;
+    display: block;
+   width: 60%;
+    }
 `;
 const Itens = styled.div`
   display: flex;
   justify-content:space-between;
   margin-top: 5%;
   align-items:center;
+  @media screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    display: flex;
+    display: block;
+    
+    }
 `
 const BotaoRemover = styled.button`
   border-radius: 5px;

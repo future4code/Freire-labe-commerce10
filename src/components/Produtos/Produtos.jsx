@@ -13,6 +13,14 @@ import CardProduto from './CardProduto'
     border-radius: 10px;
     color: white;
     padding-bottom:20px ;
+    @media screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    }
    // border: 1px solid red;
     `
     
@@ -22,6 +30,11 @@ const DisplayProdutos = styled.div`
    // grid-template-rows: 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
+    @media screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    display: flex;
+    display: block;
+
+    }
     
 `
 const Ordenacao = styled.div`
@@ -30,12 +43,18 @@ const Ordenacao = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
+    @media screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    display: flex;
+    display: block;
+    }
+    
     
 `
 const Select = styled.select`
     margin-left: 5px;
     padding: 3px 10px;
     border-radius: 5px;
+    
 `
 
 class Produtos extends React.Component{
