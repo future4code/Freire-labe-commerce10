@@ -12,11 +12,20 @@ import "./App.css";
 const Pagina = styled.div`
   margin: 0px;
   padding :0px;
-  width: 100%;
   display: flex;
+   height:100vh;
   justify-content: space-between;
   background-color: black;
+  @media screen and (min-device-width: 375px) and (max-device-width: 667px) {
+    display: flex;
+    display: block;
+    height: 100%;
+    width: 100vw;
+    }
+    
 `;
+
+
 
 
 
@@ -125,9 +134,8 @@ class App extends React.Component {
     
     return (
 
-      <Pagina>
-       
-        
+      <Pagina >
+      
         <Filtros
           valorMinimo={this.state.valorMinimo}
           valorMaximo={this.state.valorMaximo}
@@ -137,7 +145,8 @@ class App extends React.Component {
           updateMaxPrice={this.updateMaxPrice}
         />
 
-        <Produtos produtos={this.state.naves}
+        <Produtos 
+        produtos={this.state.naves}
         clicar={this.adicionarProdutoCarrinho}
          valorMinimo={this.state.valorMinimo}
          valorMaximo={this.state.valorMaximo}
@@ -146,7 +155,7 @@ class App extends React.Component {
          updateSortingParameter={this.updateSortingParameter}
         />
         
-        <Carrinho 
+        <Carrinho
            produtos={this.state.carrinho} 
            removeProduto = {this.removerProduto}
            />
