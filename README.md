@@ -6,8 +6,7 @@ vendemos os melhores Foguetes do Mundo
 
 
 ## Demonstração
-
-https://alert-amusement.surge.sh/
+https://curved-pin.surge.sh
 
 ## Autores
 
